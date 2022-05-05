@@ -1,0 +1,180 @@
+*	{
+	 box-sizing: border-box;
+
+}
+
+
+body {
+	max-width: 80%; 
+	margin:auto; 
+	padding:0px;
+	min-width:480px;
+	background-color:brown; 
+	}
+
+
+header {
+
+	background-color:lightgreen;
+	background-image:url("images/header.png"), linear-gradient(to right, lightgreen, brown);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position: left center;
+	min-height:200px;
+	}
+
+.navbar {
+	width:100%;
+	text-align:center;
+	padding:0%;
+	position:relative;
+	top:0px;
+	z-index:1;
+}
+
+nav ul{
+	width:100%;
+	}
+
+@media only screen and (min-width:992px) {
+	.navbar {
+		position:sticky;
+	}
+}
+nav li{
+	min-width:200px;
+	text-align:center;
+	padding:0px 0px;
+	background-color:orange;
+	border: 2px dashed black;
+	display:inline-block; 
+	font-family: monospace; 
+	font-weight:bold;
+	text-decoration:none;
+	text-transform: uppercase;
+	transition: transform 0.5s;
+	font-size:150%;
+	
+}
+
+nav li:hover{
+	border: 2px dashed red;
+	text-decoration:underline;
+	opacity:0.8;
+	transform: rotateY(30deg);
+	
+}
+
+
+main{
+	height:auto;
+	background:url("images/background_960_720.png") center center no-repeat, radial-gradient(circle closest-side at 50% 50%, orange, brown);
+	color:beige; 
+	background-size: contain;
+
+}
+
+#gallery-carousel{
+	background-image:linear-gradient(to right, brown, orange, brown);
+}
+
+
+.carousel-item{
+
+	height:auto;
+	text-align:center;
+}
+
+.iframe-container {
+	margin: 20px 0;
+	position:relative;
+	width:100%;
+	padding-bottom:56.25%;
+	height:0;
+}
+
+.iframe-container iframe{
+	border:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.dummy {                  /*placeholders that are always square*/
+	position:relative;
+	min-width:90%;
+	margin:5% auto;
+	padding-bottom: 90%;  /*bottom padding is calulated from the WIDTH of parent element, NOT FROM HEIGHT!*/
+	background-color:rgba(99,99,99,0.6);
+	
+}
+.dummy-inside {
+	background-color:rgba(99,99,99,0.3);
+	position:absolute;
+	left:10px;
+	right:10px;
+	top:10px;
+	bottom:10px;
+	
+}
+
+
+ul {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+
+input[type=text], input[type=email] {
+	width:80%;
+	padding:10px;
+	margin:6px 0;
+	border: 1px solid grey;
+	border-radius:5px;
+}
+
+input[type=submit], input[type=reset] {
+	width:39%;
+	padding:10px;
+	margin:6px 0;
+	border-radius:5px;	
+}
+
+input[type=submit] {
+	background-color:#00aa00;
+}
+
+input[type=submit]:hover {
+	background-color:#008800;
+}
+
+input[type=submit]:active {
+	background-color:#008800;
+	border-color:green;
+}
+label, legend {
+	font-size:120%;
+/*	text-shadow:-1px 0 black, 1px 0 black, 0 1px black, 0 -1px black;*/
+}
+
+fieldset {
+	margin:5px;
+	padding:5px;
+	border-color:green;
+}
+
+footer {
+	border: 2px dotted purple;
+	color:beige;
+	text-align:center;
+	
+}
+
+h1 {
+	margin-top:0px;
+	font-size:300%;
+	text-align:center;
+	color:beige;
+}	
